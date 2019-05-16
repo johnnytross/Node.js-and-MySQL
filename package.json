@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Bamazon stuff",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnytross/Node.js-and-MySQL.git"
+  },
+  "author": "Johnny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnytross/Node.js-and-MySQL/issues"
+  },
+  "homepage": "https://github.com/johnnytross/Node.js-and-MySQL#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
