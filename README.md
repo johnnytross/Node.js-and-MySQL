@@ -5,7 +5,7 @@
 2. On the left side of Visual Studio, locate the file name and right click on it. Select open in Terminal.
 
 3. In the terminal, run the command nodemon bamazonCustomer.js
-![nodemon command](step1Bamazon.png)
+![nodemon command](./step1Bamazon.png)
     
 4. It will now display the current products that are for sale, listed by ID, name and price. 
  ![Product Listing](Node.js-and-MySQL\step2Bamazon.png)
