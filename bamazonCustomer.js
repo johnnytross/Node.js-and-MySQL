@@ -66,6 +66,13 @@ connection.connect(function(err) {
   }
   console.log("DB connected!")
 });
+
+connection.query("SELECT * FROM products", function(err, results) {
+  if (err) throw err;
+
+  console.log(results);
+
+});
   
 
 
