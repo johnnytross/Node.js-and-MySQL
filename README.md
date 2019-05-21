@@ -8,7 +8,7 @@
 ![nodemon command](/step1Bamazon.png "nodemon")
     
 4. It will now display the current products that are for sale, listed by ID, name and price. 
- ![Product Listing](Node.js-and-MySQL\step2Bamazon.png)
+ ![Product Listing](/step2Bamazon.png)
     
 5. You will be prompted to enter the ID of the product you would like to buy. And then you will be prompted to enter the quantity that you want of the selected product 
      ![Prompt ID quantity](Node.js-and-MySQL\step3Bamazon.png)
