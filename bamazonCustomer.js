@@ -34,15 +34,16 @@ connection.connect(function(err) {
 //Query function to run once connection is established
 function initialQuery(){
   //using connection query to query the database, select product name, price, id and stock quantity from products
-  connection.query("SELECT product_name, price, item_id, stock_quantity FROM products", function(err, results) {
+  connection.query("SELECT item_id, product_name, price, stock_quantity FROM products", function(err, results) {
     if (err) throw err;
     console.log('----------------------------------------------------')
 
-    //For the length of the results, print out id, name, and price.
-    for (i = 0; i < results.length; i++){
-      console.log("ID:"+results[i].item_id + " |", "Product: " + results[i].product_name + " | ", "Price: $" + results[i].price)
+    //For the length of the results, print out id, name, and price. Console.table is the bees knees! 
+    console.table(results)
+    // for (i = 0; i < results.length; i++){
+    //   console.log("ID:"+results[i].item_id + " |", "Product: " + results[i].product_name + " | ", "Price: $" + results[i].price)
       
-    }
+    // }
     console.log('----------------------------------------------------')
     //use inquirer to get information from user
    inquirer
