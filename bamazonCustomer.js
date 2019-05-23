@@ -2,6 +2,8 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
 const express = require('express');
+const chalk = require('chalk');
+
 
 const connection = mysql.createConnection({
   //Not using local host, this is the IP of a docker machine that is hosting
@@ -36,15 +38,16 @@ function initialQuery(){
   //using connection query to query the database, select product name, price, id and stock quantity from products
   connection.query("SELECT item_id, product_name, price, stock_quantity FROM products", function(err, results) {
     if (err) throw err;
-    console.log('----------------------------------------------------')
+    console.log('\n----------------------------------------------------------------------------------------------------')
 
     //For the length of the results, print out id, name, and price. Console.table is the bees knees! 
     console.table(results)
+    // console.log(chalk.red.bgCyan(results));
     // for (i = 0; i < results.length; i++){
     //   console.log("ID:"+results[i].item_id + " |", "Product: " + results[i].product_name + " | ", "Price: $" + results[i].price)
       
     // }
-    console.log('----------------------------------------------------')
+    console.log('----------------------------------------------------------------------------------------------------\n')
     //use inquirer to get information from user
    inquirer
    //prompt asks the user for information
